@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>أذكار دخول المنزل</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+<style>
+body { font-family: 'Amiri', serif; background-color: #f9f9f9; padding: 20px; }
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #1e8449;
+  font-size: 34px;
+  font-weight: bold;
+  border-bottom: 3px solid #d4efdf;
+  padding-bottom: 10px;
+}
+.azkar-list { list-style: none; padding: 0; }
+.zekr-item { background-color: #cdeb29; border-radius: 10px; padding: 15px; margin-bottom: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+.zekr-footer { margin-top: 10px; display: flex; align-items: center; flex-wrap: wrap; }
+.repeat-count {
+  font-size: 19px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+.counter {
+  font-size: 22px;
+  font-weight: bold;
+  color: #242da7;
+}
+.count-btn { padding: 5px 10px; cursor: pointer; }
+.count-btn.completed { background-color: gray; cursor: not-allowed; }
+.count-btn .counter {
+  font-size: 22px;
+  margin-right: 6px;
+  color: white;
+}
+.stats {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+  background: #f4fdf7;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+.reward { font-weight: bold; color: #27ae60; margin-left: 10px; }
+.pdf-btn {
+  display: block;
+  text-align: center;
+  background: white;
+  color: #1e8449;
+  padding: 12px;
+  border: 2px solid #1e8449;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px 0;
+  transition: 0.3s;
+}
+
+.pdf-btn:hover {
+  background: #1e8449;
+  color: white;
+}
+#stats-panel { background-color: #fff; padding: 15px; border-radius: 10px; margin-top: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
+#month-select, #year-select { margin-bottom: 10px; }
+#total-rewards { font-weight: bold; margin-top: 10px; color: #2980b9; }
+.zekr-item p {
+  font-size: 24px;
+  line-height: 2;
+  background: #f0f8f5;
+  padding: 10px;
+  border-radius: 8px;
+}
+.vertical-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.vertical-layout .count-btn {
+  font-size: 20px;
+  padding: 14px 30px;
+  border-radius: 15px;
+  font-weight: bold;
+  min-width: 140px;
+  transition: 0.2s ease;
+}
+
+.vertical-layout .count-btn:hover {
+  transform: scale(1.05);
+}
+
+.vertical-layout .repeat-count {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.vertical-layout .reward {
+  font-size: 17px;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+</style>
+</head>
+<body>
+
+<h2>أذكار دخول المنزل</h2>
+
+<ul class="azkar-list">
+  <li class="zekr-item" data-id="101" data-max="1" data-reward="1" data-reward-symbol="🏠">
+    <p>عند فتح الباب قل (بِسْمِ اللَّهِ).</p>
+    <div class="zekr-footer vertical-layout">
+  <button class="count-btn btn btn-success">اطمئن <span class="counter">0</span></button> 
+  <span class="repeat-count">عدد التكرار: 1 مرة</span>
+  <span class="reward">🏠 المكافأة: 1</span>
+    </div>
+    <div class="stats">
+      يومي: <span class="daily">0</span> | أسبوعي: <span class="weekly">0</span> | شهري: <span class="monthly">0</span> | سنوي: <span class="yearly">0</span>
+    </div>
+  </li>
+
+  <li class="zekr-item" data-id="102" data-max="1" data-reward="1" data-reward-symbol="🏠">
+    <p>اللَّهمَّ إنِّي أسألُكَ خيرَ المولجِ، وخيرَ المخرَجِ، بسمِ اللَّهِ وَلَجنا، وبسمِ اللَّهِ خرَجنا، وعلَى اللَّهِ ربِّنا توَكَّلنا.</p>
+     <div class="zekr-footer vertical-layout">
+  <button class="count-btn btn btn-success">اطمئن <span class="counter">0</span></button> 
+  <span class="repeat-count">عدد التكرار: 1 مرة</span>
+  <span class="reward">🏠 المكافأة: 1</span>
+     </div>
+    <div class="stats">
+      يومي: <span class="daily">0</span> | أسبوعي: <span class="weekly">0</span> | شهري: <span class="monthly">0</span> | سنوي: <span class="yearly">0</span>
+    </div>
+  </li>
+
+  <li class="zekr-item" data-id="103" data-max="1" data-reward="1" data-reward-symbol="🏠">
+    <p>اَلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ.</p>
+    <div class="zekr-footer vertical-layout">
+  <button class="count-btn btn btn-success">اطمئن <span class="counter">0</span></button> 
+  <span class="repeat-count">عدد التكرار: 1 مرة</span>
+  <span class="reward">🏠 المكافأة: 1</span>
+     </div>
+    <div class="stats">
+      يومي: <span class="daily">0</span> | أسبوعي: <span class="weekly">0</span> | شهري: <span class="monthly">0</span> | سنوي: <span class="yearly">0</span>
+    </div>
+  </li>
+
+  <li class="zekr-item" data-id="104" data-max="1" data-reward="1" data-reward-symbol="🏠">
+    <p>أَعُوذُ بكَلِمَاتِ اللهِ التَّامَّاتِ مِن شَرِّ ما خَلَقَ.</p>
+    <div class="zekr-footer vertical-layout">
+  <button class="count-btn btn btn-success">اطمئن <span class="counter">0</span></button> 
+  <span class="repeat-count">عدد التكرار: 1 مرة</span>
+  <span class="reward">🏠 المكافأة: 1</span>
+     </div>
+    <div class="stats">
+      يومي: <span class="daily">0</span> | أسبوعي: <span class="weekly">0</span> | شهري: <span class="monthly">0</span> | سنوي: <span class="yearly">0</span>
+    </div>
+  </li>
+</ul>
+<a href="pdfs/10.pdf" class="pdf-btn" target="_blank">
+  📄 تحميل Pdf لأذكار دخول المنزل
+</a>
+
+<div id="stats-panel">
+  <h4>إحصائيات هجري لكل سنة وشهر</h4>
+  <select id="year-select" class="form-control"></select>
+  <select id="month-select" class="form-control"></select>
+  <div id="stats-results"></div>
+  <div id="total-rewards">🏠 إجمالي المكافآت: 0</div>
+</div>
+
+<script src="js/hijrah-date.min.js"></script>
+<script>
+// ============================
+// أسماء الأشهر الهجرية
+// ============================
+const hijriMonths = [
+  "محرم", "صفر", "ربيع الأول", "ربيع الآخر", "جمادى الأولى",
+  "جمادى الآخرة", "رجب", "شعبان", "رمضان", "شوال",
+  "ذو القعدة", "ذو الحجة"
+];
+
+// ============================
+// دوال التاريخ الهجري
+// ============================
+function getHijriKeys(){
+  const today = new HijrahDate();
+  const hYear = today.getFullYear();
+  const hMonth = today.getMonth() + 1;
+  const hDay = today.getDate();
+  const hWeek = Math.ceil(hDay/7);
+  return {
+    day: `${hYear}-${hMonth}-${hDay}`,
+    week: `${hYear}-${hMonth}-W${hWeek}`,
+    month: `${hYear}-${hMonth}`,
+    year: `${hYear}`
+  };
+}
+
+// ============================
+// تحديث العدادات والمكافآت لكل ذكر
+// ============================
+function updateZekrCounters(){
+  document.querySelectorAll('.zekr-item').forEach(item=>{
+    const id = item.dataset.id;
+    const max = parseInt(item.dataset.max);
+    const btn = item.querySelector('.count-btn');
+    const counterSpan = item.querySelector('.counter');
+    const dailySpan = item.querySelector('.daily');
+    const weeklySpan = item.querySelector('.weekly');
+    const monthlySpan = item.querySelector('.monthly');
+    const yearlySpan = item.querySelector('.yearly');
+
+    const stored = JSON.parse(localStorage.getItem(id)) || {};
+    const keys = getHijriKeys();
+
+    dailySpan.textContent = stored[keys.day] || 0;
+    weeklySpan.textContent = stored[keys.week] || 0;
+    monthlySpan.textContent = stored[keys.month] || 0;
+    yearlySpan.textContent = stored[keys.year] || 0;
+
+    counterSpan.textContent = Math.min(counterSpan.textContent, max);
+
+    if(parseInt(counterSpan.textContent) >= max){
+      btn.classList.add('completed');
+      btn.disabled = true;
+    }
+  });
+
+  updateTotalRewards();
+}
+
+// ============================
+// حساب مجموع المكافآت للقسم
+// ============================
+function updateTotalRewards(){
+  let total = 0;
+  document.querySelectorAll('.zekr-item').forEach(item=>{
+    const id = item.dataset.id;
+    const stored = JSON.parse(localStorage.getItem(id)) || {};
+    total += stored.rewards || 0;
+  });
+  document.getElementById('total-rewards').textContent = `🏠 إجمالي المكافآت: ${total}`;
+}
+
+// ============================
+// ملء قائمة السنوات بناءً على LocalStorage + السنة الحالية
+// ============================
+function fillYearSelect(){
+  const yearSet = new Set();
+
+  document.querySelectorAll('.zekr-item').forEach(item=>{
+    const id = item.dataset.id;
+    const stored = JSON.parse(localStorage.getItem(id)) || {};
+    Object.keys(stored).forEach(k=>{
+      if(!k.includes('W') && !k.includes('-') && !isNaN(parseInt(k))){
+        yearSet.add(k);
+      }
+    });
+  });
+
+  const today = new HijrahDate();
+  yearSet.add(today.getFullYear());
+
+  const years = Array.from(yearSet).sort((a,b)=>a-b);
+
+  const select = document.getElementById('year-select');
+  select.innerHTML = '';
+
+  years.forEach(y=>{
+    const opt = document.createElement('option');
+    opt.value = y;
+    opt.textContent = `${y} هـ`;
+    select.appendChild(opt);
+  });
+}
+
+// ============================
+// ملء قائمة الأشهر
+// ============================
+function fillMonthSelect(selectedYear){
+  const select = document.getElementById("month-select");
+  select.innerHTML = "";
+  hijriMonths.forEach((monthName, index)=>{
+    const value = `${selectedYear}-${index+1}`;
+    const opt = document.createElement("option");
+    opt.value = value;
+    opt.textContent = `${monthName} ${selectedYear} هـ`;
+    select.appendChild(opt);
+  });
+}
+
+// ============================
+// عرض الإحصائيات لشهر وسنة محددين
+// ============================
+function showStats(yearMonth){
+  const results = document.getElementById("stats-results");
+  results.innerHTML = "<ul>";
+  document.querySelectorAll('.zekr-item').forEach(item=>{
+    const id = item.dataset.id;
+    const text = item.querySelector("p").textContent;
+    const stored = JSON.parse(localStorage.getItem(id))||{};
+    const count = stored[yearMonth] || 0;
+    results.innerHTML += `<li><b>${text}</b>: ${count} مرة</li>`;
+  });
+  results.innerHTML += "</ul>";
+}
+
+// ============================
+// زرار التسبيح + المكافآت
+// ============================
+document.querySelectorAll('.count-btn').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    const zekrItem = btn.closest('.zekr-item');
+    const id = zekrItem.dataset.id;
+    const max = parseInt(zekrItem.dataset.max);
+    const rewardValue = parseInt(zekrItem.dataset.reward);
+    const counterSpan = zekrItem.querySelector('.counter');
+
+    if(parseInt(counterSpan.textContent) >= max) return;
+
+    const keys = getHijriKeys();
+    const stored = JSON.parse(localStorage.getItem(id))||{};
+
+    // تحديث العدادات
+    counterSpan.textContent = parseInt(counterSpan.textContent)+1;
+    stored[keys.day] = (stored[keys.day]||0)+1;
+    stored[keys.week] = (stored[keys.week]||0)+1;
+    stored[keys.month] = (stored[keys.month]||0)+1;
+    stored[keys.year] = (stored[keys.year]||0)+1;
+
+    // إضافة مكافأة
+    stored.rewards = (stored.rewards||0) + rewardValue;
+
+    localStorage.setItem(id, JSON.stringify(stored));
+
+    updateZekrCounters();
+    fillYearSelect();
+    fillMonthSelect(keys.year);
+    showStats(`${keys.year}-${keys.month}`);
+  });
+});
+
+// ============================
+// عند تغيير السنة أو الشهر في الإحصائيات
+// ============================
+document.getElementById("year-select").addEventListener('change', e=>{
+  const year = e.target.value;
+  fillMonthSelect(year);
+  showStats(`${year}-1`);
+});
+
+document.getElementById("month-select").addEventListener('change', e=>{
+  showStats(e.target.value);
+});
+
+// ============================
+// التحميل عند البداية
+// ============================
+updateZekrCounters();
+fillYearSelect();
+const today = new HijrahDate();
+fillMonthSelect(today.getFullYear());
+showStats(`${today.getFullYear()}-${today.getMonth()+1}`);
+
+</script>
+</body>
+</html>
